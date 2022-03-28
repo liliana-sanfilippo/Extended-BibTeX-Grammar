@@ -1,0 +1,6 @@
+### VS Code ###
+.vscode/
+
+### ANTLR Plugin ###
+.antlr
+**/gen/
