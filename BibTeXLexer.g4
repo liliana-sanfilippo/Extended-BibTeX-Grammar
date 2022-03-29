@@ -95,7 +95,8 @@ RBRACE
 
 // Literals
 STRING_LITERAL
-    : (LBRACE | DQUOTE) (ESC | SAFECODEPOINT)* (RBRACE | DQUOTE)
+    : LBRACE (ESC | BRACE_ENCLOSED_SAFECODEPOINT)* RBRACE
+    | DQUOTE (ESC | QUOTE_ENCLOSED_SAFECODEPOINT)* DQUOTE
     ;
 
 INTEGER_LITERAL
@@ -120,10 +121,13 @@ fragment HEX
    : [0-9a-fA-F]
    ;
 
-fragment SAFECODEPOINT
+fragment QUOTE_ENCLOSED_SAFECODEPOINT
    : ~ ["\\\u0000-\u001F]
    ;
 
+fragment BRACE_ENCLOSED_SAFECODEPOINT
+   : ~ [\\\u0000-\u001F]
+   ;
 
 // Whitespace and Comment
 
