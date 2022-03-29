@@ -4,3 +4,4 @@
 ### ANTLR Plugin ###
 .antlr
 **/gen/
+*.tokens
