@@ -1,5 +1,17 @@
 # BibTeX Grammar
-BibTeX grammar for ANTLR v4. 
+BibTeX grammar for ANTLR v4.
+
+## Feature
+- Distinguish all entry types at syntactic level
+- Support String and Integer value types
+- Support `{*}` and `"*"` String values
+- Support line comment `%`
+- Support escape characters
+
+## Related Projects
+- [BibTeX JavaScript Parser](https://github.com/yepengding/bibtex-js-parser)
+- [BibTex Java Parser](https://github.com/yepengding/BibTeX-Java-Parser)
+
 
 ---
 # References
