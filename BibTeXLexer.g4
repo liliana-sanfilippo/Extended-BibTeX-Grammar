@@ -1,56 +1,57 @@
 lexer grammar BibTeXLexer;
+import CaseInsensitiveFragments;
 
 // Keywords
 ARTICLE:
-    '@article'
+    AT A R T I C L E
     ;
 
 BOOK:
-    '@book'
+    AT B O O K
     ;
 
 BOOKLET:
-    '@booklet'
+    AT B O O K L E T
     ;
 
 INBOOK:
-    '@inbook'
+    AT I N B O O K
     ;
 
 INCOLLECTION:
-    '@incollection'
+    AT I N C O L L E C T I O N
     ;
 
 INPROCEEDINGS:
-    '@inproceedings'
+    AT I N P R O C E E D I N G S
     ;
 
 PROCEEDINGS:
-    '@proceedings'
+    AT P R O C E E D I N G S
     ;
 
 MANUAL:
-    '@manual'
+    AT M A N U A L
     ;
 
 MASTERTHESIS:
-    '@mastersthesis'
+    AT M A S T E R T H E S I S
     ;
 
 PHDTHESIS:
-    '@phdthesis'
+    AT P H D T H E S I S
     ;
 
 MISC:
-    '@misc'
+    AT M I S C
     ;
 
 TECHREPORT:
-    '@techreport'
+    AT T E C H R E P O R T
     ;
 
 UNPUBLISHED:
-    '@unpublished'
+    AT U N P U B L I S H E D
     ;
 
 
@@ -92,8 +93,15 @@ RBRACE
     : '}'
     ;
 
+// Symbols
+
+AT
+    : '@'
+    ;
+
 
 // Literals
+
 STRING_LITERAL
     : LBRACE (ESC | BRACE_ENCLOSED_SAFECODEPOINT)* RBRACE
     | DQUOTE (ESC | QUOTE_ENCLOSED_SAFECODEPOINT)* DQUOTE
