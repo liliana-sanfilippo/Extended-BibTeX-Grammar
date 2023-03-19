@@ -2,6 +2,6 @@
 .vscode/
 
 ### ANTLR Plugin ###
-.antlr
+.antlr/
 **/gen/
 *.tokens
