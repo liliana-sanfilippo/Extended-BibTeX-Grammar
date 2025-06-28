@@ -32,33 +32,33 @@ options {
 }
 
 // Keywords
-ARTICLE: AT 'article';
+ARTICLE: '@article';
 
-BOOK: AT 'book';
+BOOK: '@book';
 
-BOOKLET: AT 'booklet';
+BOOKLET: '@booklet';
 
-INBOOK: AT 'inbook';
+INBOOK: '@inbook';
 
-INCOLLECTION: AT 'incollection';
+INCOLLECTION: '@incollection';
 
-INPROCEEDINGS: AT 'inproceedings';
+INPROCEEDINGS: '@inproceedings';
 
-PROCEEDINGS: AT 'proceedings';
+PROCEEDINGS: '@proceedings';
 
-MANUAL: AT 'manual';
+MANUAL: '@manual';
 
-MASTERTHESIS: AT 'masterthesis';
+MASTERTHESIS: '@masterthesis';
 
-PHDTHESIS: AT 'phdthesis';
+PHDTHESIS: '@phdthesis';
 
-MISC: AT 'misc';
+MISC: '@misc';
 
-TECHREPORT: AT 'techreport';
+TECHREPORT: '@techreport';
 
-UNPUBLISHED: AT 'unpublished';
+UNPUBLISHED: '@unpublished';
 
-DATASET: AT 'dataset';
+DATASET: '@dataset';
 
 // Identifiers
 
