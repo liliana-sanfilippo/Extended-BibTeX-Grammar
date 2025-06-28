@@ -9,6 +9,9 @@ BibTeX grammar for ANTLR v4.
 > article, book, booklet, inbook, incollection, inproceedings, proceedings, manual, mastersthesis, phdthesis, misc,
 > techreport, unpublished
 
+- Includes some inofficial types, currently:
+> datasets
+
 - Support String and Integer value types
 - Support `{*}` and `"*"` String values
 - Support line comment `%`
