@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2023 Yepeng Ding
+ * Copyright (c) 2025 Liliana Sanfilippo
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -51,6 +51,7 @@ entry
     | misc
     | techreport
     | unpublished
+    | dataset
     ;
 
 field
@@ -116,4 +117,8 @@ techreport
 
 unpublished
     : UNPUBLISHED LBRACE IDENTIFIER COMMA field (COMMA field)* RBRACE
+    ;
+
+dataset
+    : DATASET LBRACE IDENTIFIER COMMA field (COMMA field)* RBRACE
     ;
