@@ -60,6 +60,14 @@ UNPUBLISHED: '@unpublished';
 
 DATASET: '@dataset';
 
+ONLINE: '@online';
+
+SOFTWARE: '@software';
+
+CONFERENCE: '@conference';
+
+GENAI: '@genai';
+
 // Identifiers
 
 IDENTIFIER: [a-zA-Z_] [a-zA-Z_0-9-]*;

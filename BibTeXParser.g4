@@ -52,6 +52,10 @@ entry
     | techreport
     | unpublished
     | dataset
+    | online
+    | software
+    | genai
+    | conference
     ;
 
 field
@@ -121,4 +125,20 @@ unpublished
 
 dataset
     : DATASET LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+software
+    : SOFTWARE LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+online
+    : ONLINE LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+conference
+    : CONFERENCE LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+genai
+    : GENAI LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
     ;
