@@ -42,7 +42,7 @@ INBOOK: '@inbook';
 
 INCOLLECTION: '@incollection';
 
-INPROCEEDINGS: '@inproceedings';
+INPROCEEDINGS: '@inproceedings' | '@conference';
 
 PROCEEDINGS: '@proceedings';
 
@@ -60,13 +60,13 @@ UNPUBLISHED: '@unpublished';
 
 DATASET: '@dataset';
 
-ONLINE: '@online';
+ONLINE: '@online'  '@electronic';
 
 SOFTWARE: '@software';
 
-CONFERENCE: '@conference';
-
 GENAI: '@genai';
+
+TRANSCRIPT: '@transcript';
 
 // Identifiers
 

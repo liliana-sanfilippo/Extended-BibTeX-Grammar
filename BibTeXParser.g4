@@ -55,7 +55,7 @@ entry
     | online
     | software
     | genai
-    | conference
+    | transcript
     ;
 
 field
@@ -141,4 +141,8 @@ conference
 
 genai
     : GENAI LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+transcript
+    : TRANSCRIPT LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
     ;
