@@ -54,19 +54,25 @@ PHDTHESIS: '@phdthesis';
 
 MISC: '@misc';
 
-TECHREPORT: '@techreport';
+TECHREPORT: '@techreport' | '@report';
 
 UNPUBLISHED: '@unpublished';
 
 DATASET: '@dataset';
 
-ONLINE: '@online'  '@electronic';
+ONLINE: '@online' | '@electronic' | '@www';
 
 SOFTWARE: '@software';
 
 GENAI: '@genai';
 
 TRANSCRIPT: '@transcript';
+
+AUDIO: '@audio';
+
+VIDEO: '@video' | '@movie';
+
+PATENT: '@patent';
 
 // Identifiers
 

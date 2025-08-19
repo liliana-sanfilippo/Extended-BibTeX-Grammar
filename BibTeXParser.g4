@@ -56,6 +56,9 @@ entry
     | software
     | genai
     | transcript
+    | video
+    | audio
+    | patent
     ;
 
 field
@@ -135,9 +138,6 @@ online
     : ONLINE LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
     ;
 
-conference
-    : CONFERENCE LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
-    ;
 
 genai
     : GENAI LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
@@ -145,4 +145,16 @@ genai
 
 transcript
     : TRANSCRIPT LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+video
+    : VIDEO LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+patent
+    : PATENT LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+audio
+    : AUDIO LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
     ;
