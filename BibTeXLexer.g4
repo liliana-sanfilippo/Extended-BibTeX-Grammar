@@ -34,17 +34,17 @@ options {
 // Keywords
 ARTICLE: '@article';
 
-BOOK: '@book';
+BOOK: '@book' | '@mvbook';
 
 BOOKLET: '@booklet';
 
-INBOOK: '@inbook';
+INBOOK: '@inbook' | '@bookinbook' | '@suppbook';
 
-INCOLLECTION: '@incollection';
+INCOLLECTION: '@incollection' | '@suppcollection';
 
 INPROCEEDINGS: '@inproceedings' | '@conference';
 
-PROCEEDINGS: '@proceedings';
+PROCEEDINGS: '@proceedings' | '@mvproceedings';
 
 MANUAL: '@manual';
 
