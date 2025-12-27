@@ -59,6 +59,8 @@ entry
     | video
     | audio
     | patent
+    | bachelorthesis
+    | igemwiki
     ;
 
 field
@@ -84,6 +86,14 @@ book
 
 booklet
     : BOOKLET LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+igemwiki
+    : IGEMWIKI LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
+    ;
+
+bachelorthesis
+    : BACHELORTHESIS LBRACE IDENTIFIER COMMA field (COMMA field)* (COMMA)? RBRACE
     ;
 
 inbook

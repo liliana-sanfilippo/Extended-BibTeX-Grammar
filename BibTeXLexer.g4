@@ -48,7 +48,7 @@ PROCEEDINGS: '@proceedings' | '@mvproceedings';
 
 MANUAL: '@manual';
 
-MASTERTHESIS: '@masterthesis';
+MASTERTHESIS: '@masterthesis'| '@mastersthesis';
 
 PHDTHESIS: '@phdthesis';
 
@@ -73,6 +73,10 @@ AUDIO: '@audio';
 VIDEO: '@video' | '@movie';
 
 PATENT: '@patent';
+
+BACHELORTHESIS: '@bachelorthesis';
+
+IGEMWIKI: '@igemwiki';
 
 // Identifiers
 
